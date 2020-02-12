@@ -19,7 +19,7 @@ bhaiFlix is an app that allows users to browse movies from the [The Movie Databa
 
 ### App Walkthough VIDEO
 
-[Video Walkthrough](https://i.imgur.com/VdDev86.mp4)
+[Video Walkthrough](https://i.imgur.com/JWUHDps.mp4)
 
 ### Notes
 Describe any challenges encountered while building the app.
