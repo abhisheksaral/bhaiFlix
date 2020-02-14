@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3801B55C23F3FACA0048CE40 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3801B55B23F3FACA0048CE40 /* MovieDetailsViewController.swift */; };
+		380B546923F664A400346AC7 /* UpcomingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B546823F664A400346AC7 /* UpcomingDetailsViewController.swift */; };
+		380B546B23F6732100346AC7 /* ViewUpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380B546A23F6732100346AC7 /* ViewUpcomingViewController.swift */; };
 		38B2477F23EDEFB70069C117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B2477E23EDEFB70069C117 /* AppDelegate.swift */; };
 		38B2478123EDEFB70069C117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B2478023EDEFB70069C117 /* SceneDelegate.swift */; };
 		38B2478623EDEFB70069C117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B2478423EDEFB70069C117 /* Main.storyboard */; };
@@ -14,11 +17,16 @@
 		38B2478B23EDEFB80069C117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B2478923EDEFB80069C117 /* LaunchScreen.storyboard */; };
 		38B2479323EDF05F0069C117 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B2479223EDF05F0069C117 /* MoviesViewController.swift */; };
 		38B2479523EDF8C20069C117 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B2479423EDF8C20069C117 /* MovieCell.swift */; };
+		38DCF60B23F507FF0019B32E /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DCF60A23F507FF0019B32E /* UpcomingViewController.swift */; };
+		38DCF60D23F513FC0019B32E /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DCF60C23F513FC0019B32E /* MovieGridCell.swift */; };
 		AE673A7AF7332B1A54861CFC /* Pods_bhaiFlix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04EFD31A29528741E4C0114 /* Pods_bhaiFlix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33CE6DC4AE9D1BA072EF32B3 /* Pods-bhaiFlix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bhaiFlix.release.xcconfig"; path = "Target Support Files/Pods-bhaiFlix/Pods-bhaiFlix.release.xcconfig"; sourceTree = "<group>"; };
+		3801B55B23F3FACA0048CE40 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		380B546823F664A400346AC7 /* UpcomingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingDetailsViewController.swift; sourceTree = "<group>"; };
+		380B546A23F6732100346AC7 /* ViewUpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUpcomingViewController.swift; sourceTree = "<group>"; };
 		38B2477B23EDEFB70069C117 /* bhaiFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bhaiFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B2477E23EDEFB70069C117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38B2478023EDEFB70069C117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +36,8 @@
 		38B2478C23EDEFB80069C117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38B2479223EDF05F0069C117 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		38B2479423EDF8C20069C117 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		38DCF60A23F507FF0019B32E /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		38DCF60C23F513FC0019B32E /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		B04EFD31A29528741E4C0114 /* Pods_bhaiFlix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bhaiFlix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CDF1FBABA7939ECC35F801 /* Pods-bhaiFlix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bhaiFlix.debug.xcconfig"; path = "Target Support Files/Pods-bhaiFlix/Pods-bhaiFlix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +54,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		380B548C23F6B40A00346AC7 /* NowPlaying */ = {
+			isa = PBXGroup;
+			children = (
+				38B2479223EDF05F0069C117 /* MoviesViewController.swift */,
+				3801B55B23F3FACA0048CE40 /* MovieDetailsViewController.swift */,
+				38B2479423EDF8C20069C117 /* MovieCell.swift */,
+			);
+			path = NowPlaying;
+			sourceTree = "<group>";
+		};
+		380B548D23F6B47100346AC7 /* UpcomingMovies */ = {
+			isa = PBXGroup;
+			children = (
+				38DCF60A23F507FF0019B32E /* UpcomingViewController.swift */,
+				380B546823F664A400346AC7 /* UpcomingDetailsViewController.swift */,
+				38DCF60C23F513FC0019B32E /* MovieGridCell.swift */,
+				380B546A23F6732100346AC7 /* ViewUpcomingViewController.swift */,
+			);
+			path = UpcomingMovies;
+			sourceTree = "<group>";
+		};
 		38B2477223EDEFB70069C117 = {
 			isa = PBXGroup;
 			children = (
@@ -67,8 +98,8 @@
 			children = (
 				38B2477E23EDEFB70069C117 /* AppDelegate.swift */,
 				38B2478023EDEFB70069C117 /* SceneDelegate.swift */,
-				38B2479223EDF05F0069C117 /* MoviesViewController.swift */,
-				38B2479423EDF8C20069C117 /* MovieCell.swift */,
+				380B548C23F6B40A00346AC7 /* NowPlaying */,
+				380B548D23F6B47100346AC7 /* UpcomingMovies */,
 				38B2478423EDEFB70069C117 /* Main.storyboard */,
 				38B2478723EDEFB80069C117 /* Assets.xcassets */,
 				38B2478923EDEFB80069C117 /* LaunchScreen.storyboard */,
@@ -91,7 +122,6 @@
 				E8CDF1FBABA7939ECC35F801 /* Pods-bhaiFlix.debug.xcconfig */,
 				33CE6DC4AE9D1BA072EF32B3 /* Pods-bhaiFlix.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,10 +240,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38DCF60B23F507FF0019B32E /* UpcomingViewController.swift in Sources */,
+				3801B55C23F3FACA0048CE40 /* MovieDetailsViewController.swift in Sources */,
 				38B2477F23EDEFB70069C117 /* AppDelegate.swift in Sources */,
 				38B2478123EDEFB70069C117 /* SceneDelegate.swift in Sources */,
 				38B2479523EDF8C20069C117 /* MovieCell.swift in Sources */,
+				380B546923F664A400346AC7 /* UpcomingDetailsViewController.swift in Sources */,
+				380B546B23F6732100346AC7 /* ViewUpcomingViewController.swift in Sources */,
 				38B2479323EDF05F0069C117 /* MoviesViewController.swift in Sources */,
+				38DCF60D23F513FC0019B32E /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
