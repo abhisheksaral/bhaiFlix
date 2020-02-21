@@ -228,7 +228,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihw-4j-Oki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="vsx-UP-Kj8">
                     <connections>
-                        <segue destination="DcW-oK-eFU" kind="presentation" modalPresentationStyle="pageSheet" id="Hf4-VL-efh"/>
+                        <segue destination="DcW-oK-eFU" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="Hf4-VL-efh"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -277,9 +277,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hAM-0l-gN1">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hAM-0l-gN1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6yh-Ln-YBd">
                                     <size key="itemSize" width="414" height="216"/>
@@ -311,6 +310,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hAM-0l-gN1" firstAttribute="leading" secondItem="ia2-ln-g9B" secondAttribute="leading" id="7Bv-kB-tBD"/>
+                            <constraint firstItem="hAM-0l-gN1" firstAttribute="width" secondItem="xbF-yQ-hZN" secondAttribute="width" id="Ej2-sp-QOz"/>
+                            <constraint firstItem="hAM-0l-gN1" firstAttribute="top" secondItem="xbF-yQ-hZN" secondAttribute="top" id="ZG0-g8-79E"/>
+                            <constraint firstItem="hAM-0l-gN1" firstAttribute="height" secondItem="xbF-yQ-hZN" secondAttribute="height" id="jFi-6y-1TF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ia2-ln-g9B"/>
                     </view>
                     <navigationItem key="navigationItem" title="Upcoming" largeTitleDisplayMode="always" id="tqt-nz-oNK"/>

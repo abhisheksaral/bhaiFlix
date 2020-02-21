@@ -25,8 +25,8 @@ class UpcomingViewController: UIViewController, UICollectionViewDataSource, UICo
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
-        layout.minimumLineSpacing = 10
-        layout.minimumInteritemSpacing = -1
+        layout.minimumLineSpacing = 15
+        layout.minimumInteritemSpacing = 0
         
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
         

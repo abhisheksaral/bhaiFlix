@@ -35,7 +35,14 @@ class UpcomingDetailsViewController: UIViewController {
         posterView.af_setImage(withURL: posterUrl)
         
         let backdropBaseUrl = "https://image.tmdb.org/t/p/w1280"
-        let backdropPath = movie["backdrop_path"] as! String
+        //let backdropPath = movie["backdrop_path"] as! String
+        var backdropPath: String {
+            if movie["backdrop_path"] is NSNull {
+                return movie["poster_path"] as! String
+            } else {
+                return movie["backdrop_path"] as! String
+            }
+        }
         let backdropUrl = URL (string: backdropBaseUrl + backdropPath)!
         
         backdropView.af_setImage(withURL: backdropUrl)
@@ -60,10 +67,6 @@ class UpcomingDetailsViewController: UIViewController {
            }
         }
         task.resume()
-        
-        print(id)
-        
-        
     }
     
     // MARK: - Navigation
@@ -72,15 +75,18 @@ class UpcomingDetailsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let videoInfo = movieVideos[0]
-        
-        let key = videoInfo["key"]!
-        
-        let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(key)")
         
         let upcomingVideoViewController = segue.destination as! ViewUpcomingViewController
         
+        var youtubeURL = URL(string: "https://www.youtube.com/")
+        
+        if movieVideos.count != 0 {
+            youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(movieVideos[0]["key"]!)")
+        } else {
+            youtubeURL = URL(string: "https://www.youtube.com/")
+        }
+        
         upcomingVideoViewController.myUrl = youtubeURL
     }
-
+    
 }

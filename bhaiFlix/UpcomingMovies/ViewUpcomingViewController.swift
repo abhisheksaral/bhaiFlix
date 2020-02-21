@@ -12,23 +12,18 @@ import WebKit
 class ViewUpcomingViewController: UIViewController, WKNavigationDelegate {
 
     var myUrl = URL(string: "https://www.google.com")
-    var webView: WKWebView!
-    
-    override func loadView() {
-        webView = WKWebView()
-        webView.navigationDelegate = self
-        view = webView
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         
+        let webView = WKWebView(frame: view.frame)
+        webView.navigationDelegate = self
+        view.addSubview(webView)
         
         let request = URLRequest(url: myUrl!)
         webView.load(request)
         
-
-        // Do any additional setup after loading the view.
     }
 
     /*
