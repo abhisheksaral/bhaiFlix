@@ -1,14 +1,15 @@
 //
-//  UpcomingDetailsViewController.swift
+//  MovieDetailsViewController.swift
 //  bhaiFlix
 //
-//  Created by Abhishek Saral on 2/13/20.
+//  Created by Abhishek Saral on 2/12/20.
 //  Copyright © 2020 Tech Knowns. All rights reserved.
 //
 
 import UIKit
+import  AlamofireImage
 
-class UpcomingDetailsViewController: UIViewController {
+class MovieDetailsViewController: UIViewController {
 
     @IBOutlet weak var backdropView: UIImageView!
     @IBOutlet weak var posterView: UIImageView!
@@ -23,10 +24,30 @@ class UpcomingDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
         posterView.isUserInteractionEnabled = true
         posterView.addGestureRecognizer(tapGestureRecognizer)
+        
+        posterView.layer.shadowOffset = .zero
+        posterView.layer.shadowColor = UIColor.systemBlue.cgColor
+        posterView.layer.shadowRadius = 20
+        posterView.layer.shadowOpacity = 1
+        posterView.layer.shadowPath = UIBezierPath(rect: posterView.bounds).cgPath
+        posterView.layer.masksToBounds = false
+        
+        
+        let animation = CABasicAnimation(keyPath: "shadowOpacity")
+        animation.fromValue = 1
+        animation.toValue = 0.2
+        animation.autoreverses = true
+        animation.duration = 1
+        animation.repeatCount = Float.infinity
+        
+        posterView.layer.add(animation, forKey: nil)
+        
         titleLabel.text = movie["title"] as? String
         synopsisLabel.text = movie["overview"] as? String
+        
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
@@ -35,7 +56,6 @@ class UpcomingDetailsViewController: UIViewController {
         posterView.af_setImage(withURL: posterUrl)
         
         let backdropBaseUrl = "https://image.tmdb.org/t/p/w1280"
-        //let backdropPath = movie["backdrop_path"] as! String
         var backdropPath: String {
             if movie["backdrop_path"] is NSNull {
                 return movie["poster_path"] as! String
@@ -58,16 +78,16 @@ class UpcomingDetailsViewController: UIViewController {
               print(error.localizedDescription)
            } else if let data = data {
               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-
-              // TODO: Get the array of movies
-              // TODO: Store the movies in a property to use elsewhere
+            
             self.movieVideos = dataDictionary["results"] as! [[String:Any]]
-              // TODO: Reload your table view data
 
            }
         }
         task.resume()
+        
     }
+    
+
     
     // MARK: - Navigation
 
@@ -76,7 +96,7 @@ class UpcomingDetailsViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-        let upcomingVideoViewController = segue.destination as! ViewUpcomingViewController
+        let upcomingVideoViewController = segue.destination as! MovieTrailerViewController
         
         var youtubeURL = URL(string: "https://www.youtube.com/")
         
@@ -87,6 +107,8 @@ class UpcomingDetailsViewController: UIViewController {
         }
         
         upcomingVideoViewController.myUrl = youtubeURL
+        
     }
     
+
 }

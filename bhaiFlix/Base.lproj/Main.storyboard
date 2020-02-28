@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="882.58928571428567"/>
+            <point key="canvasLocation" x="1396" y="883"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="ORZ-lp-d3p">
@@ -117,7 +117,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fs3-Gt-IbC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RlN-Hh-3B8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RlN-Hh-3B8">
                                 <rect key="frame" x="20" y="356.5" width="125" height="183"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="183" id="Dt7-36-zVu"/>
@@ -171,80 +171,12 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="1628.5714285714284"/>
+            <point key="canvasLocation" x="825" y="1696"/>
         </scene>
-        <!--Upcoming Details View Controller-->
-        <scene sceneID="X2Y-iL-sCz">
-            <objects>
-                <viewController id="Ae1-Ty-k7w" customClass="UpcomingDetailsViewController" customModule="bhaiFlix" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m84-Ye-a63">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="20Q-IX-q12">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TbD-Et-Fox">
-                                <rect key="frame" x="20" y="356.5" width="125" height="183"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="7Tq-CK-oLv"/>
-                                    <constraint firstAttribute="height" constant="183" id="CsL-JP-kce"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfR-EM-1AK">
-                                <rect key="frame" x="155" y="458" width="244" height="26.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synopsis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-V7-r5j">
-                                <rect key="frame" x="20" y="579.5" width="374" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="ffU-V7-r5j" firstAttribute="leading" secondItem="gnU-R1-SVC" secondAttribute="leading" constant="20" id="06B-bB-lgA"/>
-                            <constraint firstItem="UfR-EM-1AK" firstAttribute="top" secondItem="20Q-IX-q12" secondAttribute="bottom" constant="10" id="0JC-lu-bbg"/>
-                            <constraint firstAttribute="trailing" secondItem="20Q-IX-q12" secondAttribute="trailing" id="2ji-PP-7QX"/>
-                            <constraint firstItem="20Q-IX-q12" firstAttribute="top" secondItem="m84-Ye-a63" secondAttribute="top" id="8Uo-Bq-X1n"/>
-                            <constraint firstItem="UfR-EM-1AK" firstAttribute="leading" secondItem="TbD-Et-Fox" secondAttribute="trailing" constant="10" id="Bfc-IA-FZW"/>
-                            <constraint firstItem="gnU-R1-SVC" firstAttribute="trailing" secondItem="UfR-EM-1AK" secondAttribute="trailing" constant="15" id="Jg1-Tb-arO"/>
-                            <constraint firstItem="gnU-R1-SVC" firstAttribute="trailing" secondItem="ffU-V7-r5j" secondAttribute="trailing" constant="20" id="SCJ-Ro-X1H"/>
-                            <constraint firstItem="20Q-IX-q12" firstAttribute="height" secondItem="m84-Ye-a63" secondAttribute="height" multiplier="0.5" id="U7F-s3-gUi"/>
-                            <constraint firstItem="20Q-IX-q12" firstAttribute="leading" secondItem="m84-Ye-a63" secondAttribute="leading" id="Wvy-x0-MFz"/>
-                            <constraint firstItem="ffU-V7-r5j" firstAttribute="top" secondItem="TbD-Et-Fox" secondAttribute="bottom" constant="40" id="cKf-F5-3vP"/>
-                            <constraint firstItem="TbD-Et-Fox" firstAttribute="leading" secondItem="gnU-R1-SVC" secondAttribute="leading" constant="20" id="dpX-je-k8s"/>
-                            <constraint firstItem="TbD-Et-Fox" firstAttribute="centerY" secondItem="m84-Ye-a63" secondAttribute="centerY" id="eqZ-fh-bXQ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gnU-R1-SVC"/>
-                    </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="LQf-5k-VXE"/>
-                    <connections>
-                        <outlet property="backdropView" destination="20Q-IX-q12" id="qha-kr-Zns"/>
-                        <outlet property="posterView" destination="TbD-Et-Fox" id="ZV7-8a-E5z"/>
-                        <outlet property="synopsisLabel" destination="ffU-V7-r5j" id="bRF-ch-DxF"/>
-                        <outlet property="tapGestureRecognizer" destination="vsx-UP-Kj8" id="Z3I-YE-5fq"/>
-                        <outlet property="titleLabel" destination="UfR-EM-1AK" id="cnB-ar-sgI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ihw-4j-Oki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="vsx-UP-Kj8">
-                    <connections>
-                        <segue destination="DcW-oK-eFU" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="Hf4-VL-efh"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="1500.0000000000002" y="1628.5714285714284"/>
-        </scene>
-        <!--View Upcoming View Controller-->
+        <!--Movie Trailer View Controller-->
         <scene sceneID="8By-AJ-Z9H">
             <objects>
-                <viewController storyboardIdentifier="viewupcoming" id="DcW-oK-eFU" customClass="ViewUpcomingViewController" customModule="bhaiFlix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewupcoming" id="DcW-oK-eFU" customClass="MovieTrailerViewController" customModule="bhaiFlix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zUH-Qa-MCi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,7 +206,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55a-dj-bO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+            <point key="canvasLocation" x="1396" y="144"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="tF7-Pe-OOP">
@@ -310,7 +242,7 @@
                                         <size key="customSize" width="130" height="216"/>
                                         <connections>
                                             <outlet property="posterView" destination="w5O-20-8Kg" id="aNi-d2-pWJ"/>
-                                            <segue destination="Ae1-Ty-k7w" kind="show" id="HMt-Ua-jbg"/>
+                                            <segue destination="EQP-Ga-RuA" kind="show" id="GKt-3x-mwc"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -332,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ips-gV-Sdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1500.0000000000002" y="882.58928571428567"/>
+            <point key="canvasLocation" x="138" y="883"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="EZj-AU-Kpe">
@@ -351,7 +283,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBL-Qv-6Zz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1500.0000000000002" y="124.55357142857142"/>
+            <point key="canvasLocation" x="138" y="144"/>
         </scene>
     </scenes>
     <resources>
@@ -359,6 +291,6 @@
         <image name="reel_tabbar_icon" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mj7-Ob-8q1"/>
+        <segue reference="GKt-3x-mwc"/>
     </inferredMetricsTieBreakers>
 </document>

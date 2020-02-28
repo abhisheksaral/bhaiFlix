@@ -88,7 +88,7 @@ class UpcomingViewController: UIViewController, UICollectionViewDataSource, UICo
         
         // Pass the selected movie to the details view controller
         
-        let detailsViewController = segue.destination as! UpcomingDetailsViewController
+        let detailsViewController = segue.destination as! MovieDetailsViewController
         
         detailsViewController.movie = movie
         

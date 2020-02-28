@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class ViewUpcomingViewController: UIViewController, WKNavigationDelegate {
+class MovieTrailerViewController: UIViewController, WKNavigationDelegate {
 
     var myUrl = URL(string: "https://www.google.com")
     
