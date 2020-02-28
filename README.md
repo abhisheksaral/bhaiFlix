@@ -13,10 +13,11 @@ bhaiFlix is an app that allows users to browse movies from the [The Movie Databa
 #### BONUS
 - [x] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
 - [x] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
+- [x] Dark color is supported by default by using system colors which work on both Dark and Light Mode.
 
 ### App Walkthough GIF
 
-To be added. Check part 1 video below.
+[Video Walkthrough](https://i.imgur.com/14poPjK.mp4)
 
 ### Notes
 - Getting the Grid View layout right was difficult.
