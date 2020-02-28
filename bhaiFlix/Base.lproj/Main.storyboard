@@ -138,6 +138,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Crf-a2-rES" firstAttribute="trailing" secondItem="Haq-ld-YVY" secondAttribute="trailing" constant="20" id="8Xq-Sv-JN5"/>
                             <constraint firstItem="Haq-ld-YVY" firstAttribute="top" secondItem="RlN-Hh-3B8" secondAttribute="bottom" constant="40" id="AE9-O5-plf"/>
@@ -159,10 +160,16 @@
                         <outlet property="backdropView" destination="fs3-Gt-IbC" id="fFF-UI-WEw"/>
                         <outlet property="posterView" destination="RlN-Hh-3B8" id="RAK-pp-8sj"/>
                         <outlet property="synopsisLabel" destination="Haq-ld-YVY" id="d7o-7Z-SmT"/>
+                        <outlet property="tapGestureRecognizer" destination="mX1-WG-4nL" id="fat-OL-kAW"/>
                         <outlet property="titleLabel" destination="EWz-CI-9QM" id="CFT-vb-QMX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0q-1l-UAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mX1-WG-4nL">
+                    <connections>
+                        <segue destination="DcW-oK-eFU" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="mj7-Ob-8q1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="1628.5714285714284"/>
         </scene>
@@ -248,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxE-w7-u9P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1500" y="2364"/>
+            <point key="canvasLocation" x="825" y="2555"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="XP0-sF-Ukf">
@@ -351,4 +358,7 @@
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="reel_tabbar_icon" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mj7-Ob-8q1"/>
+    </inferredMetricsTieBreakers>
 </document>
